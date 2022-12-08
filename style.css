@@ -1,0 +1,143 @@
+:root {
+  --background-color: hsl(235, 21%, 11%);
+  --text-color: white;
+  --check-border-1: hsl(192, 100%, 67%);
+  --check-border-2: hsl(280, 87%, 65%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: hsl(235, 21%, 11%); */
+  background-color: var(--background-color);
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 5fr;
+  width: 500px;
+  height: 80%;
+}
+
+.logo-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+#logo {
+  color: white;
+}
+
+#main-input {
+  width: 100%;
+  height: 50px;
+}
+
+.items {
+  color: var(--text-color);
+}
+
+.items:nth-child(1) {
+  border-radius: 50px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  align-items: center;
+  min-height: 70px;
+  background-color: hsl(235, 24%, 19%);
+  border-bottom: 1px solid lightgrey;
+  padding: 0 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+}
+
+.todoText {
+  font-size: 18px;
+  font-weight: 500;
+}
+.check-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid teal;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-check {
+  width: 15px;
+  height: 15px;
+  background-image: url(./images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.check-circle:hover {
+  transform: scale(1.1);
+}
+
+.iconCross {
+  width: 25px;
+  height: 25px;
+  background-image: url(./images/icon-cross.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.iconCross:hover {
+  transform: scale(1.1);
+}
+
+input {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+  outline: none;
+}
+
+p {
+  word-break: break-all;
+  white-space: normal;
+}

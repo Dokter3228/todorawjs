@@ -5,18 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo</title>
   </head>
   <body>
-    <h1>test text</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maxime nam
-      voluptatibus eius qui, assumenda numquam, error, maiores laudantium sint
-      mollitia et molestiae deleniti exercitationem. Aliquid inventore obcaecati
-      expedita magni aliquam quo nemo nobis minus voluptatibus nostrum nihil,
-      provident suscipit facere impedit recusandae est, distinctio molestiae
-      facilis. Molestiae, odio dicta.
-    </p>
+    <img src="./images/bg-desktop-dark.jpg" alt="" class="background-image" />
+    <div class="container">
+      <div class="logo-row">
+        <h1 id="logo">TODO</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          class="switch"
+        >
+          <path
+            fill="#FFF"
+            fill-rule="evenodd"
+            d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"
+          />
+        </svg>
+      </div>
+      <input type="text" placeholder="add item" id="main-input" />
+      <div class="items"></div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
