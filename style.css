@@ -38,6 +38,7 @@ body {
   grid-template-rows: 1fr 1fr 5fr;
   width: 500px;
   height: 80%;
+  gap: 50px;
 }
 
 .logo-row {
